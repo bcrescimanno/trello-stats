@@ -1,4 +1,3 @@
-trello-stats
-============
+# trello-stats
 
-Building some statistics based on the Trello API
+"Some stats around Trello"

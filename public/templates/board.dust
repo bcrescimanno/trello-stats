@@ -4,5 +4,11 @@
     <h1>
         Viewing: <a href="{shortUrl}">{name}</a>
     </h1>
+    <p>
+        There are {numLists} lists.
+    </p>
+    <p>
+        There are {numCards} cards.
+    </p>
 {/body}
 

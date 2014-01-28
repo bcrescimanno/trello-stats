@@ -1,0 +1,8 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>
+        Viewing: <a href="{shortUrl}">{name}</a>
+    </h1>
+{/body}
+

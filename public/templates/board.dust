@@ -10,5 +10,8 @@
     <p>
         There are {numCards} cards.
     </p>
+    <p>
+        The first list has {numCardsInFirstList} cards.
+    </p>
 {/body}
 

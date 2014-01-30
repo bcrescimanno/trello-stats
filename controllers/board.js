@@ -36,15 +36,7 @@ module.exports = function (app) {
             cards: generateAsyncTrelloRequest(cardsUrl)
         }, function (err, data) {
             if (!err) {
-                model = new Board(data.board);
-                model.numLists = data.lists.length;
-                model.numCards = data.cards.length;
-
-                model.numCardsInFirstList = data.cards.filter(function (card) {
-                    return card.idList === data.lists[0].id;
-                }).length;
-
-                res.render('board', model);
+                res.render('board', data);
             } else {
                 // This is placeholder shit
                 res.render('index', {name: 'Super Fail Time!'})

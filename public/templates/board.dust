@@ -2,16 +2,15 @@
 
 {<body}
     <h1>
-        Viewing: <a href="{shortUrl}">{name}</a>
+        Viewing: <a href="{board.shortUrl}">{board.name}</a>
     </h1>
-    <p>
-        There are {numLists} lists.
-    </p>
-    <p>
-        There are {numCards} cards.
-    </p>
-    <p>
-        The first list has {numCardsInFirstList} cards.
-    </p>
+    <h2>
+        We have some lists:
+    </h2>
+    <ul>
+        {#lists}
+            <li>{name}</li>
+        {/lists}
+    </ul>
 {/body}
 

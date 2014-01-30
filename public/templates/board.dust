@@ -12,5 +12,11 @@
             <li>{name}</li>
         {/lists}
     </ul>
+    <h2>And we have some cards</h2>
+    <ul>
+        {#cards}
+            <li>{name} {#labels}{color}{/labels}</li>
+        {/cards}
+    </ul>
 {/body}
 
